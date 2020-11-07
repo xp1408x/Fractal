@@ -8,14 +8,15 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseCore
 import SwiftyJSON
 
 class ClientManager: NSObject {
-//    static let sharedInstance = ClientManager()
     static let initialClients = 40
     static let moreClients = 20
     
     private lazy var clientRef: DatabaseReference = Database.database().reference().child("Cliente")
+//    private lazy var clientRef1: DatabaseReference = Database.fi
     
     func requestInitialClients(responseHandler: @escaping (_ error: Bool, _ messages: [Client]?) -> ()){
         let query = self.clientRef.queryOrderedByKey().queryLimited(toLast: UInt(ClientManager.initialClients))
@@ -76,7 +77,7 @@ class ClientManager: NSObject {
         }
     
     func requestInitialClientsWithWord(name: String, responseHandler: @escaping (_ error: Bool, _ messages: [Client]?) -> ()){
-        let query = self.clientRef.queryOrderedByKey().queryLimited(toLast: UInt(ClientManager.initialClients)).
+        let query = self.clientRef.queryOrderedByKey().queryStarting(atValue: name).queryLimited(toLast: UInt(ClientManager.initialClients))
             
             query.observeSingleEvent(of: .value, with: { (snapshot) in
               // Get user value
@@ -96,6 +97,36 @@ class ClientManager: NSObject {
                         }
                     responseHandler(true, clients)
                 }
+              // ...
+              }) { (error) in
+                responseHandler(false, nil)
+                print(error.localizedDescription)
+            }
+        }
+    
+    func requestMoreClientsWithWord(name: String, client: Client, responseHandler: @escaping (_ error: Bool, _ messages: [Client]?) -> ()){
+        let query = self.clientRef.queryOrderedByKey().queryStarting(atValue: name).queryEnding(atValue: client.id).queryLimited(toLast: UInt(ClientManager.moreClients))
+            
+            query.observeSingleEvent(of: .value, with: { (snapshot) in
+              // Get user value
+                if let values = snapshot.value as? Dictionary<String, AnyObject>{
+                    var clients = [Client]()
+                    
+                    for (key, value) in values {
+                            let clientId = key
+                            if let clientDict = value as? Dictionary<String, AnyObject>{
+                                let json = JSON(clientDict)
+                                let user = Client(cliId: clientId, json: json)
+                                clients.append(user)
+    //                            if endMessage.id != message.id{
+    //                                messages.append(message)
+    //                            }
+                            }
+                        }
+                    responseHandler(true, clients)
+                }
+              
+
               // ...
               }) { (error) in
                 responseHandler(false, nil)

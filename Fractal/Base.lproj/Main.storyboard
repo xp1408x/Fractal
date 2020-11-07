@@ -324,6 +324,9 @@
                                             <constraint firstAttribute="width" constant="100" id="oqo-ln-zkI"/>
                                         </constraints>
                                         <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="search:" destination="6Xf-it-wC9" eventType="touchUpInside" id="MIi-Qp-pFw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -334,7 +337,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fAB-gz-ijU">
-                                <rect key="frame" x="17" y="168" width="380" height="694"/>
+                                <rect key="frame" x="17" y="88" width="380" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClientCellIdentifier" rowHeight="80" id="yC3-X3-uoY" customClass="ClientTableViewCell" customModule="Fractal" customModuleProvider="target">
@@ -410,7 +413,7 @@
                             <constraint firstItem="xKg-Vd-DVC" firstAttribute="trailing" secondItem="SyV-nV-1vc" secondAttribute="trailing" constant="17" id="Ds6-Mn-gQP"/>
                             <constraint firstItem="fAB-gz-ijU" firstAttribute="leading" secondItem="xKg-Vd-DVC" secondAttribute="leading" constant="17" id="Emo-2M-gy3"/>
                             <constraint firstItem="xKg-Vd-DVC" firstAttribute="trailing" secondItem="fAB-gz-ijU" secondAttribute="trailing" constant="17" id="ePL-et-Xsx"/>
-                            <constraint firstItem="fAB-gz-ijU" firstAttribute="top" secondItem="xKg-Vd-DVC" secondAttribute="top" constant="80" id="loq-Of-XJE"/>
+                            <constraint firstItem="fAB-gz-ijU" firstAttribute="top" secondItem="xKg-Vd-DVC" secondAttribute="top" id="loq-Of-XJE"/>
                             <constraint firstItem="SyV-nV-1vc" firstAttribute="top" secondItem="xKg-Vd-DVC" secondAttribute="top" constant="10" id="ojV-1B-XFm"/>
                             <constraint firstItem="SyV-nV-1vc" firstAttribute="leading" secondItem="xKg-Vd-DVC" secondAttribute="leading" constant="17" id="sPe-fF-PDW"/>
                             <constraint firstItem="kPZ-wZ-UR8" firstAttribute="leading" secondItem="xKg-Vd-DVC" secondAttribute="leading" id="tma-vd-RDb"/>
@@ -420,6 +423,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fjd-xR-VkS"/>
                     <connections>
+                        <outlet property="searchName" destination="VG8-nH-ChB" id="ykf-dR-BTF"/>
                         <outlet property="tableView" destination="fAB-gz-ijU" id="elD-qh-Sc5"/>
                         <segue destination="qke-YK-DU7" kind="show" identifier="UpdateClientSegue" id="w0j-BW-iN6"/>
                     </connections>

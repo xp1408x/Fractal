@@ -39,11 +39,20 @@ class ListViewController: UIViewController {
     func loadMoreClients(){
         
         let client = self.clients[0]
-        self.clientManager.requestMoreClients(client: client) { (haveUser, clients) in
-        if haveUser {
-            self.showMoreClients(moreClients: clients ?? [Client]())
+        if isSearch{
+            self.clientManager.requestMoreClientsWithWord(name: self.name, client: client) { (haveUser, clients) in
+            if haveUser {
+                self.showMoreClients(moreClients: clients ?? [Client]())
+                }
+            
             }
-        
+        }else{
+            self.clientManager.requestMoreClients(client: client) { (haveUser, clients) in
+            if haveUser {
+                self.showMoreClients(moreClients: clients ?? [Client]())
+                }
+            
+            }
         }
     }
     
@@ -74,6 +83,19 @@ class ListViewController: UIViewController {
     
     @IBAction func search(_ sender: UIButton){
         self.name = self.searchName.text ?? ""
+        self.isSearch = true
+        self.restartSearch()
+    }
+    
+    func restartSearch(){
+        self.clients.removeAll()
+        self.tableView.reloadData()
+        self.clientManager.requestInitialClientsWithWord(name: name) { (haveUser, clients) in
+            if haveUser {
+                self.clients = clients!
+                self.tableView.reloadData()
+            }
+        }
     }
     
 //     MARK: - Navigation
