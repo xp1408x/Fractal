@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8B8AECB25550CE300F3671E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AECA25550CE300F3671E /* AppDelegate.swift */; };
+		C8B8AECD25550CE300F3671E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AECC25550CE300F3671E /* SceneDelegate.swift */; };
+		C8B8AECF25550CE300F3671E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AECE25550CE300F3671E /* ViewController.swift */; };
+		C8B8AED225550CE300F3671E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B8AED025550CE300F3671E /* Main.storyboard */; };
+		C8B8AED425550CE700F3671E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B8AED325550CE700F3671E /* Assets.xcassets */; };
+		C8B8AED725550CE700F3671E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B8AED525550CE700F3671E /* LaunchScreen.storyboard */; };
+		C8B8AEDF25550F8100F3671E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B8AEDE25550F8100F3671E /* GoogleService-Info.plist */; };
+		C8B8AEE22555289D00F3671E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AEE12555289D00F3671E /* Client.swift */; };
+		C8B8AEE525552DE300F3671E /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AEE425552DE300F3671E /* ClientTableViewCell.swift */; };
+		C8B8AEE725552ECE00F3671E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AEE625552ECE00F3671E /* ListViewController.swift */; };
+		C8B8AEE9255534CE00F3671E /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AEE8255534CE00F3671E /* ClientManager.swift */; };
+		C8B8AEEB2555515100F3671E /* AddOrUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B8AEEA2555515100F3671E /* AddOrUpdateViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28B170BDAF790A99F9BD587A /* Pods-Fractal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fractal.debug.xcconfig"; path = "Target Support Files/Pods-Fractal/Pods-Fractal.debug.xcconfig"; sourceTree = "<group>"; };
+		991A71BDF761F7D2F0C6FCC4 /* Pods_Fractal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fractal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B8AEC725550CE300F3671E /* Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B8AECA25550CE300F3671E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8B8AECC25550CE300F3671E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C8B8AECE25550CE300F3671E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8B8AED125550CE300F3671E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8B8AED325550CE700F3671E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8B8AED625550CE700F3671E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8B8AED825550CE700F3671E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B8AEDE25550F8100F3671E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8B8AEE12555289D00F3671E /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		C8B8AEE425552DE300F3671E /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		C8B8AEE625552ECE00F3671E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C8B8AEE8255534CE00F3671E /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		C8B8AEEA2555515100F3671E /* AddOrUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrUpdateViewController.swift; sourceTree = "<group>"; };
+		CC89E2D5030C0B74FD038C2A /* Pods-Fractal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fractal.release.xcconfig"; path = "Target Support Files/Pods-Fractal/Pods-Fractal.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8B8AEC425550CE300F3671E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8B8AEBE25550CE300F3671E = {
+			isa = PBXGroup;
+			children = (
+				C8B8AEC925550CE300F3671E /* Fractal */,
+				C8B8AEC825550CE300F3671E /* Products */,
+				EF65CE6D025F29D4F37EAD26 /* Pods */,
+				CF8AEFF87DD53CC277E0F234 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C8B8AEC825550CE300F3671E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8B8AEC725550CE300F3671E /* Fractal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8B8AEC925550CE300F3671E /* Fractal */ = {
+			isa = PBXGroup;
+			children = (
+				C8B8AEE325552DB900F3671E /* TableViewCell */,
+				C8B8AEE02555288500F3671E /* Model */,
+				C8B8AECA25550CE300F3671E /* AppDelegate.swift */,
+				C8B8AECC25550CE300F3671E /* SceneDelegate.swift */,
+				C8B8AEDE25550F8100F3671E /* GoogleService-Info.plist */,
+				C8B8AECE25550CE300F3671E /* ViewController.swift */,
+				C8B8AED025550CE300F3671E /* Main.storyboard */,
+				C8B8AED325550CE700F3671E /* Assets.xcassets */,
+				C8B8AED525550CE700F3671E /* LaunchScreen.storyboard */,
+				C8B8AED825550CE700F3671E /* Info.plist */,
+				C8B8AEE625552ECE00F3671E /* ListViewController.swift */,
+				C8B8AEE8255534CE00F3671E /* ClientManager.swift */,
+				C8B8AEEA2555515100F3671E /* AddOrUpdateViewController.swift */,
+			);
+			path = Fractal;
+			sourceTree = "<group>";
+		};
+		C8B8AEE02555288500F3671E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B8AEE12555289D00F3671E /* Client.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8B8AEE325552DB900F3671E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C8B8AEE425552DE300F3671E /* ClientTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CF8AEFF87DD53CC277E0F234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991A71BDF761F7D2F0C6FCC4 /* Pods_Fractal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF65CE6D025F29D4F37EAD26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28B170BDAF790A99F9BD587A /* Pods-Fractal.debug.xcconfig */,
+				CC89E2D5030C0B74FD038C2A /* Pods-Fractal.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8B8AEC625550CE300F3671E /* Fractal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8B8AEDB25550CE700F3671E /* Build configuration list for PBXNativeTarget "Fractal" */;
+			buildPhases = (
+				68A91A1702FCF4748AEFF2C9 /* [CP] Check Pods Manifest.lock */,
+				C8B8AEC325550CE300F3671E /* Sources */,
+				C8B8AEC425550CE300F3671E /* Frameworks */,
+				C8B8AEC525550CE300F3671E /* Resources */,
+				76FEE194149382C2AB8BE0BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fractal;
+			productName = Fractal;
+			productReference = C8B8AEC725550CE300F3671E /* Fractal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8B8AEBF25550CE300F3671E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = gamestorming;
+				TargetAttributes = {
+					C8B8AEC625550CE300F3671E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = C8B8AEC225550CE300F3671E /* Build configuration list for PBXProject "Fractal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8B8AEBE25550CE300F3671E;
+			productRefGroup = C8B8AEC825550CE300F3671E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8B8AEC625550CE300F3671E /* Fractal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8B8AEC525550CE300F3671E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B8AED725550CE700F3671E /* LaunchScreen.storyboard in Resources */,
+				C8B8AEDF25550F8100F3671E /* GoogleService-Info.plist in Resources */,
+				C8B8AED425550CE700F3671E /* Assets.xcassets in Resources */,
+				C8B8AED225550CE300F3671E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68A91A1702FCF4748AEFF2C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fractal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FEE194149382C2AB8BE0BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fractal/Pods-Fractal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8B8AEC325550CE300F3671E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B8AECF25550CE300F3671E /* ViewController.swift in Sources */,
+				C8B8AECB25550CE300F3671E /* AppDelegate.swift in Sources */,
+				C8B8AEE9255534CE00F3671E /* ClientManager.swift in Sources */,
+				C8B8AEE725552ECE00F3671E /* ListViewController.swift in Sources */,
+				C8B8AEE22555289D00F3671E /* Client.swift in Sources */,
+				C8B8AEE525552DE300F3671E /* ClientTableViewCell.swift in Sources */,
+				C8B8AEEB2555515100F3671E /* AddOrUpdateViewController.swift in Sources */,
+				C8B8AECD25550CE300F3671E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8B8AED025550CE300F3671E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8B8AED125550CE300F3671E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8B8AED525550CE700F3671E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8B8AED625550CE700F3671E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8B8AED925550CE700F3671E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8B8AEDA25550CE700F3671E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8B8AEDC25550CE700F3671E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B170BDAF790A99F9BD587A /* Pods-Fractal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KVTAY4Y4Z7;
+				INFOPLIST_FILE = Fractal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-gamestorming.temporal.Fractal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8B8AEDD25550CE700F3671E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC89E2D5030C0B74FD038C2A /* Pods-Fractal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KVTAY4Y4Z7;
+				INFOPLIST_FILE = Fractal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-gamestorming.temporal.Fractal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8B8AEC225550CE300F3671E /* Build configuration list for PBXProject "Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B8AED925550CE700F3671E /* Debug */,
+				C8B8AEDA25550CE700F3671E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8B8AEDB25550CE700F3671E /* Build configuration list for PBXNativeTarget "Fractal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B8AEDC25550CE700F3671E /* Debug */,
+				C8B8AEDD25550CE700F3671E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8B8AEBF25550CE300F3671E /* Project object */;
+}
